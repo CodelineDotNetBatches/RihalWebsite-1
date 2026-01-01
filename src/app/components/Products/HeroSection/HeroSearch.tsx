@@ -4,7 +4,8 @@ function HeroSearch() {
   return (
     <div
       className="mb-11 flex h-[50px] p-2 justify-center items-center gap-[18px] shrink-0 rounded-[500px]
-      bg-gradient-to-l from-[rgba(255,195,0,0.23)] to-[rgba(0,230,208,0.23)]"
+       from-[rgba(255,195,0,0.23)] to-[rgba(0,230,208,0.23)]  mb-6
+          sm:mb-7 "
     >
       {/* Search Box */}
       <div className="w-[435px] h-10 px-3 py-2 bg-[#FFFFFF] rounded-3xl outline outline-1 outline-[#E2E8F0] flex justify-between items-center">

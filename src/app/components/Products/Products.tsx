@@ -6,7 +6,10 @@ import HeroSearch from './HeroSection/HeroSearch'
 
 const Products = () => {
   return (
-    <div>
+    <div
+      className="px-[238px] pt-[196px] pb-[375px] flex flex-col items-center bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/5.png')" }}
+    >
       
        <HeroTitle />
        <HeroEmp />

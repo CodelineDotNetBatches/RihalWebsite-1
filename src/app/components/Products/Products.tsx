@@ -3,8 +3,96 @@ import HeroTitle from './HeroSection/HeroTitle'
 import HeroEmp from './HeroSection/HeroEmp'
 import HeroDescrption from './HeroSection/HeroDescrption'
 import HeroSearch from './HeroSection/HeroSearch'
+import CompanyCard from './CompanyCard/CompanyCard'
 
-const Products = () => {
+export type ProductCardData = {
+  id: number;
+  logoImage: string;
+  name: string;
+  title: string;
+  tags: string[];
+  bullets: string[];
+  highlight: string;
+  trustedBy: string[];
+  demoHref: string;
+  productHref: string;
+  mediaSrc: string;
+};
+
+const Products: React.FC = () => {
+  const cards: ProductCardData[] = [
+    {
+      id: 1,
+      logoImage: "/Images/ProductComponenets/Company_Card_Image/IconContainer.png",
+      name: "Siraqi",
+      title: "Enterprise AI Platform",
+      tags: ["Oil & Gas"],
+      bullets: [
+        "Smart, secure AI search",
+        "Chat & meeting assistant",
+        "Workflow automation",
+        "Arabic & English support",
+        "On-premise, privacy-first deployment",
+      ],
+      highlight: "Used by 12+ organizations to reduce processing time by 40%",
+      trustedBy: [
+        "/Images/ProductComponenets/Company_Card_Image/image11.png",
+        "/Images/ProductComponenets/Company_Card_Image/image14.png",
+        "/Images/ProductComponenets/Company_Card_Image/image12.png",
+      ],
+      demoHref: "#",
+      productHref: "#",
+      mediaSrc: "/Images/ProductComponenets/Company_Card_Image/source_Option4.5.png",
+    },
+    {
+      id: 2,
+      logoImage: "/Images/ProductComponenets/Company_Card_Image/Layer_1.svg",
+      name: "Jadowel",
+      title: "Data Collaboration Platform",
+      tags: ["Oil & Gas", "Government"],
+      bullets: [
+        "Capture and manage data through custom forms",
+        "Automate approvals and workflows",
+        "Analyze data with AI-powered insights",
+        "Import from Excel with flexible structures",
+        "Track and audit large-scale datasets",
+      ],
+      highlight: "Manages 5M+ data entries monthly across national data projects",
+      trustedBy: [
+        "/Images/ProductComponenets/Company_Card_Image/image11.png",
+        "/Images/ProductComponenets/Company_Card_Image/image14.png",
+        "/Images/ProductComponenets/Company_Card_Image/image12.png",
+      ],
+      demoHref: "#",
+      productHref: "#",
+      mediaSrc:
+        "/Images/ProductComponenets/Company_Card_Image/08d676bdfde560814b8ee2a14df3e4dce675e60d.png",
+    },
+    {
+      id: 3,
+      logoImage: "/Images/ProductComponenets/Company_Card_Image/Layer_1.svg",
+      name: "Iqra’a",
+      title: "AI Powered Data Extraction",
+      tags: ["Oil & Gas", "Telecommunication"],
+      bullets: [
+        "Automates data capture with OCR",
+        "OCR for scanned & digital files",
+        "AI rule-based validation",
+        "Customizable models",
+        "Built-in validation checks",
+      ],
+      highlight: "Processes over 100K documents with 95% accuracy",
+      trustedBy: [
+        "/Images/ProductComponenets/Company_Card_Image/image11.png",
+        "/Images/ProductComponenets/Company_Card_Image/image14.png",
+        "/Images/ProductComponenets/Company_Card_Image/image12.png",
+      ],
+      demoHref: "#",
+      productHref: "#",
+      mediaSrc:
+        "/Images/ProductComponenets/Company_Card_Image/7f12ea1300756f144a0fb5daaf68dbfc01103a46.png",
+    },
+  ];
   return (
     <div
       className="
@@ -50,6 +138,16 @@ const Products = () => {
           <HeroSearch />
         </div>
       </div>
+
+     <div className="flex flex-col gap-13 max-w-7xl mx-auto">
+        {cards.map((card) => (
+          <CompanyCard key={card.id} data={card} />
+        ))}
+      </div>
+     
+
+
+
     </div>
   )
 }

@@ -5,12 +5,12 @@ function HeroTitle() {
     <div>
       <div className="text-[rgba(244,255,254,1)] text-2xl font-normal font-inter leading-8 text-center  mb-6
           sm:mb-7 ">
-  Products
+        Products
 </div>
 
     </div>
   )
 }
-//re
+
 
 export default HeroTitle

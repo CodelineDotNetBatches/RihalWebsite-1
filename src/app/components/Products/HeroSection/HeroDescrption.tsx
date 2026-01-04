@@ -4,7 +4,7 @@ const HeroDescrption = () => {
   return (
     <div>
       <div
-        className="text-xl mb-7 text-[rgba(244,255,254,1)] font-normal font-['Inter'] leading-7 text-center  mb-6
+        className="text-xl mb-7 text-[rgba(244,255,254,1)] font-normal  font-['Inter'] leading-7 text-center  mb-6
           sm:mb-7"
       >
         <p>

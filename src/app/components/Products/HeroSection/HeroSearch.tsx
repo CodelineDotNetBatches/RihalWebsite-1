@@ -1,14 +1,25 @@
-import React from 'react'
+import React from "react";
 
-function HeroSearch() {
+const HeroSearch = () => {
   return (
     <div
-      className="mb-11 flex h-[50px] p-2 justify-center items-center gap-[18px] shrink-0 rounded-[500px]
-       from-[rgba(255,195,0,0.23)] to-[rgba(0,230,208,0.23)]  mb-6
-          sm:mb-7 "
+      className="
+        flex
+        flex-col sm:flex-row
+        items-center
+        justify-center
+        gap-[18px]
+        h-[50px] sm:h-[50px]
+        p-2
+        rounded-[500px]
+        shrink-0
+        opacity-100
+        bg-gradient-to-l from-[rgba(255,195,0,0.23)] to-[rgba(0,230,208,0.23)]
+        mb-6 sm:mb-7
+      "
     >
       {/* Search Box */}
-      <div className="w-[435px] h-10 px-3 py-2 bg-[#FFFFFF] rounded-3xl outline outline-1 outline-[#E2E8F0] flex justify-between items-center">
+      <div className="flex justify-between items-center w-[435px] h-10 px-3 py-2 bg-white rounded-3xl outline outline-1 outline-[#E2E8F0]">
         <div className="flex items-center gap-2">
           {/* Search Icon */}
           <svg
@@ -21,8 +32,7 @@ function HeroSearch() {
             <line x1="21" y1="21" x2="16.65" y2="16.65" strokeWidth="2" />
           </svg>
 
-        
-          <span className="text-[#9AA5B1] text-sm font-normal font-['Inter'] leading-5">
+          <span className="text-[#9AA5B1] text-sm font-normal font-inter leading-5">
             Search A Product
           </span>
         </div>
@@ -56,13 +66,11 @@ function HeroSearch() {
       </div>
 
       {/* Filter Box */}
-      <div className="flex justify-between items-center w-44 h-10 px-3 py-2 bg-[#FFFFFF] rounded-3xl outline outline-1 outline-[#E2E8F0]">
-      
-        <div className="flex-1 text-[#020618] opacity-50 text-sm font-normal font-['Inter'] leading-5">
+      <div className="flex justify-between items-center w-44 h-10 px-3 py-2 bg-white rounded-3xl outline outline-1 outline-[#E2E8F0]">
+        <div className="flex-1 text-[#020618] opacity-50 text-sm font-normal font-inter leading-5">
           Filter By
         </div>
 
-  
         <svg
           className="w-4 h-4 text-[#020618] opacity-50"
           fill="none"
@@ -73,7 +81,7 @@ function HeroSearch() {
         </svg>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSearch
+export default HeroSearch;

@@ -14,6 +14,13 @@ module.exports = {
         "theme-foreground": "#111827",
         "theme-muted-foreground": "#6b7280",
         "theme-input": "#d1d5db",
+         white: '#FFFFFF',
+          primaryLight: '#7FF5E8',
+          primary: '#00E6CF',
+          dark: '#003A3F',
+          black: '#000000',
+         softMint: '#ddf3f0ff',
+            
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

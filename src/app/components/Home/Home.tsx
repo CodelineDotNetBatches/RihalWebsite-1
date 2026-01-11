@@ -4,6 +4,7 @@ import HeroB from './HeroSection/HeroB'
 import { FAQSection } from './FAQ'
 import { FeaturedNewsSection } from './FeaturedNews'
 import ProofOfInspect from './ProofOfInspect/ProofOfInspect'
+import CaseStudies from '../SharedComponents/CaseStudies/CaseStudies'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <HeroA/>
       <HeroB/>
       <ProofOfInspect/>
+      <CaseStudies/>
       
       <FeaturedNewsSection/>
       <FAQSection/>

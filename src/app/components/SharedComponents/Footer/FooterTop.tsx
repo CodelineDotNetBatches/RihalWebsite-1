@@ -45,6 +45,7 @@ export default function FooterTop() {
             font-normal
             leading-8
             font-['Inter']
+            opacity-80
           "
                 >
                     Stay in the loop with what’s next.

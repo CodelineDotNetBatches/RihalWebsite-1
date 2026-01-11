@@ -30,12 +30,12 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-/* Reset أساسي */
+
 * {
   box-sizing: border-box;
 }
 
-/* منع أي خلفية بيضاء من التأثير */
+
 html,
 body {
   margin: 0;
@@ -44,7 +44,7 @@ body {
   color: #ffffff;
 }
 
-/* إزالة أي scroll أفقي ناتج عن glow */
+
 body {
   overflow-x: hidden;
 }

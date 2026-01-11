@@ -8,7 +8,7 @@ export default function FooterLinks() {
           Navigation
         </div>
 
-        <div className="mt-[23px] opacity-80 text-white text-base font-normal font-['Rihal'] flex flex-col space-y-[10px]">
+        <div className="mt-[23px] opacity-60 text-white text-base font-normal font-['Rihal'] flex flex-col space-y-[10px]">
           <div>Home</div>
           <div>Products</div>
           <div>Solutions</div>
@@ -21,7 +21,7 @@ export default function FooterLinks() {
           Company
         </div>
 
-        <div className="mt-[23px] opacity-80 text-white text-base font-normal font-['Rihal'] flex flex-col space-y-[10px]">
+        <div className="mt-[23px] opacity-60 text-white text-base font-normal font-['Rihal'] flex flex-col space-y-[10px]">
           <div>About Us</div>
           <div>Careers</div>
           <div>Tenders</div>
@@ -34,7 +34,7 @@ export default function FooterLinks() {
           Our Group
         </div>
 
-        <div className="mt-[14px] opacity-80 text-white text-base font-normal font-['Rihal']">
+        <div className="mt-[14px] opacity-60 text-white text-base font-normal font-['Rihal']">
           <span className="block leading-[32px] whitespace-nowrap">
             Transformation Pioneers
           </span>
@@ -53,7 +53,7 @@ export default function FooterLinks() {
           Find Us
         </div>
 
-        <div className="mt-[14px] opacity-80 text-white text-base font-normal font-['Rihal']">
+        <div className="mt-[14px] opacity-60 text-white text-base font-normal font-['Rihal']">
           <span className="block leading-[32px] whitespace-nowrap">
             Our HQ
           </span>

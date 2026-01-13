@@ -8,7 +8,7 @@ export default function FooterBottom() {
       <div className="max-w-[1100px] mx-auto flex items-center justify-between">
 
       {/* LEFT */}
-      <div className="w-[240px] text-[rgba(255, 255, 255, 0.24)] text-sm font-normal font-['Rihal'] leading-4">
+      <div className="w-[240px] text-[rgba(255, 255, 255, 0.24)] text-sm font-normal font-['Rihal'] leading-4 opacity-70">
         © 2025 Rihal. All Rights Reserved.
       </div>
 

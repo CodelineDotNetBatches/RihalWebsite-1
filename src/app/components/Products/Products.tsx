@@ -4,6 +4,9 @@ import HeroEmp from './HeroSection/HeroEmp'
 import HeroDescrption from './HeroSection/HeroDescrption'
 import HeroSearch from './HeroSection/HeroSearch'
 import CompanyCard from './CompanyCard/CompanyCard'
+import CaseStudies from '../SharedComponents/CaseStudies/CaseStudies'
+import CTA from '../SharedComponents/CTA/CTA'
+import ProductsTestimonials from './ProductsTestimonials/ProductsTestimonials'
 
 export type ProductCardData = {
   id: number;
@@ -145,6 +148,12 @@ const Products: React.FC = () => {
         ))}
       </div>
      
+     <ProductsTestimonials/>
+     
+        <CaseStudies/>
+
+        <CTA/>
+
 
 
 

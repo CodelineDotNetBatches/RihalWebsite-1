@@ -25,7 +25,7 @@ const items: Item[] = [
   {
     key: "blog",
     title: "Blog",
-    href: "/resources/blog",
+    href: "/blogs",
     description:
       "Custom software solutions tailored to your business needs, from web and mobile apps to enterprise systems.",
     icon: <BlogIcon />,
@@ -50,7 +50,7 @@ const items: Item[] = [
 
 type Props = {
   defaultActiveKey?: ResourceKey;
-  previewImageSrc?: string; // اختياري
+  previewImageSrc?: string; 
 };
 
 export default function ResourcesDropdown({

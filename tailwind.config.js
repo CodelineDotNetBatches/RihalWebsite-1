@@ -14,6 +14,7 @@ module.exports = {
         "theme-foreground": "#111827",
         "theme-muted-foreground": "#6b7280",
         "theme-input": "#d1d5db",
+        "color-Rihal-Black": '#121212',
          white: '#FFFFFF',
           primaryLight: '#7FF5E8',
           primary: '#00E6CF',

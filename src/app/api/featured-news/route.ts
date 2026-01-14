@@ -16,7 +16,7 @@ const TAGS: FeaturedNewsItem["tag"][] = [
 ];
 
 export async function GET() {
-  // تقدري تغيّري العدد هنا لأي رقم (30 / 50 / 100)
+
   const count = 100;
 
   const data: FeaturedNewsItem[] = Array.from({ length: count }, (_, i) => {
@@ -29,7 +29,7 @@ export async function GET() {
       title: `Building Scalable Cloud-Native Applications #${i + 1}`,
       description:
         "A comprehensive guide to designing and implementing cloud-native solutions that can scale efficiently while maintaining performance and reliability.",
-      imageSrc: "/featured-news/cover.jpg", // نفس صورتك الموجودة
+      imageSrc: "/featured-news/cover.jpg", 
     };
   });
 

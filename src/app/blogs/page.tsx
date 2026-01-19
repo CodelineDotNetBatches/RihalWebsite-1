@@ -1,4 +1,4 @@
-import React from 'react'
+"use client";
 import Hero from '../components/Blogs/Hero/Hero'
 import HeroB from '../components/Blogs/Hero/HeroB'
 import { FAQSection } from '../components/Home/FAQ'

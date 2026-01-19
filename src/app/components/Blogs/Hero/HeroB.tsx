@@ -8,16 +8,17 @@ function HeroB() {
 
 
   return (
-  <div>
+  <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div className="relative left-0 right-0 -bottom-40 z-10">
   
 </div>
 
       {/* Header */}
       <div className="w-full max-w-[956px] mx-auto flex flex-col items-center gap-4">
-        <h2 className="text-center text-color-Rihal-Black text-4xl lg:text-5xl font-medium font-['Rihal'] leading-tight">
-          Featured Posts
-        </h2>
+       <h2 className="text-center text-black text-4xl lg:text-5xl font-medium font-['Rihal'] leading-tight">
+  Featured Posts
+</h2>
+
 
         <p className="text-center text-slate-900/70 text-lg lg:text-2xl font-normal font-['Rihal']">
           Stay ahead with our latest thoughts on software engineering, emerging

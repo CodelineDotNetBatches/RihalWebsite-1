@@ -1,5 +1,8 @@
 #!/bin/sh
+cd /app || exit 1
 
-cd /app
-pnpm install
-pnpm run dev
+if [ ! -d node_modules ]; then
+  pnpm install
+fi
+
+pnpm dev --host 0.0.0.0 --port 3000

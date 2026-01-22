@@ -4,20 +4,18 @@ services:
     build:
       context: ./web
       target: base
-    entrypoint: /bin/sh /app/entrypoint.sh
+    working_dir: /app
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
     ports:
-      - 3000:3000
+      - "3000:3000"
     volumes:
       - ./web:/app:rw,cached
+      - /app/node_modules
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:3000"]
+      test: ["CMD-SHELL", "curl --fail http://localhost:3000 || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 3
-    # environment:
-    #   - STRAPI_BASE_URL=http://strapi:1337
-    #   - NEXT_PUBLIC_STRAPI_BASE_URL=http://localhost:1337
-    #   - NEXT_PUBLIC_STRAPI_READONLY_API_KEY={your_readonly_api_key}
     networks:
       - rihal-website
 
